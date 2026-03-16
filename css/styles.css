@@ -349,7 +349,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(54, 54, 56, 0.55);
+    background: rgba(255, 255, 255, 0.86);
     backdrop-filter: blur(12px);
     z-index: var(--z-header);
     transition: all var(--transition-speed) ease;
@@ -371,9 +371,9 @@ section {
 }
 
 .header.scrolled {
-    background: rgba(54, 54, 56, 0.96);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .header-content {
@@ -400,24 +400,17 @@ section {
 .logo-wordmark {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    color: var(--text-white);
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.03em;
+    gap: 0;
 }
 
 .logo-wordmark__icon {
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
 }
 
 .logo-wordmark__text {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 2px;
+    display: none;
 }
 
 .logo-wordmark__word {
@@ -455,7 +448,7 @@ section {
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: var(--font-size-sm);
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(54, 54, 56, 0.92);
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -501,12 +494,12 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(54, 54, 56, 0.92);
     font-size: 0.95rem;
     font-weight: 500;
     transition: color var(--transition-speed) ease;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.26);
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(54, 54, 56, 0.18);
     box-shadow: none;
     padding: 0 16px;
     border-radius: 9999px;
@@ -528,7 +521,7 @@ section {
 }
 
 .header-contact .contact-item:hover {
-    color: var(--text-white);
+    color: var(--primary-color);
     border-color: rgba(235, 75, 59, 0.45);
     background: rgba(235, 75, 59, 0.14);
 }
@@ -580,7 +573,7 @@ section {
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(54, 54, 56, 0.88);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;

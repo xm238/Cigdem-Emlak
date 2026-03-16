@@ -43,7 +43,7 @@ Version: 1.0.0
     .header {
         padding: 0;
         height: var(--header-height);
-        background: rgba(54, 54, 56, 0.85);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
     }
 
@@ -69,22 +69,12 @@ Version: 1.0.0
     }
 
     .logo-wordmark {
-        gap: 8px;
+        gap: 0;
     }
 
     .logo-wordmark__icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .logo-wordmark__word {
-        font-size: clamp(1.1rem, 5.5vw, 1.35rem);
-        letter-spacing: 0.08em;
-    }
-
-    .logo-wordmark__sub {
-        font-size: 0.53rem;
-        letter-spacing: 0.14em;
+        width: 56px;
+        height: 56px;
     }
 
     .main-nav {
@@ -687,7 +677,7 @@ Version: 1.0.0
 /* Dark Mode Support for Responsive */
 @media (prefers-color-scheme: dark) and (min-width: 768px) {
     .header {
-        background: rgba(54, 54, 56, 0.8);
+        background: rgba(255, 255, 255, 0.95);
     }
 
     .hero-form {
