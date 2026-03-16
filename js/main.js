@@ -1,5 +1,5 @@
 /**
- * Mozaik Emlak Hizmetleri Web Sitesi
+ * Çiğdem Emlak Gayrimenkul Veliefendi Web Sitesi
  * Main JavaScript File
  * Version: 1.0.0
  */
@@ -41,8 +41,8 @@ let isLoading = false;
 const propertiesData = [
     {
         id: 1,
-        title: 'Etiler Prestij Villa',
-        location: 'Etiler, Beşiktaş',
+        title: 'Veliefendi Prestij Villa',
+        location: 'Veliefendi, Zeytinburnu',
         price: 24500000,
         beds: 5,
         baths: 3,
@@ -52,13 +52,13 @@ const propertiesData = [
         featured: true,
         description: 'Geniş bahçeli, yüksek tavanlı ve ferah yaşam alanlarına sahip prestijli villa.',
         features: ['Bahçe', 'Kapalı Otopark', 'Akıllı Ev', 'Geniş Teras'],
-        agent: 'Hüsnü BAŞ',
-        contact: '0532 687 35 35'
+        agent: 'Yusuf Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 2,
-        title: 'Akatlar Modern Rezidans',
-        location: 'Akatlar, Beşiktaş',
+        title: 'Veliefendi Modern Rezidans',
+        location: 'Veliefendi, Zeytinburnu',
         price: 12800000,
         beds: 2,
         baths: 2,
@@ -68,13 +68,13 @@ const propertiesData = [
         featured: true,
         description: 'Merkezi konumda, güvenlikli site içinde modern ve fonksiyonel rezidans daire.',
         features: ['Şehir Manzarası', 'Spor Salonu', 'Kapalı Otopark', '7/24 Güvenlik'],
-        agent: 'Portföy Uzmanı',
-        contact: '0532 687 35 35'
+        agent: 'Devran Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 3,
-        title: 'Levent Aile Dairesi',
-        location: 'Levent, Beşiktaş',
+        title: 'Sümer Mahallesi Aile Dairesi',
+        location: 'Sümer Mahallesi, Zeytinburnu',
         price: 17500000,
         beds: 4,
         baths: 2,
@@ -84,13 +84,13 @@ const propertiesData = [
         featured: false,
         description: 'Aile yaşamına uygun, geniş salonlu ve ulaşımı kolay konumda satılık daire.',
         features: ['Açık Balkon', 'Asansör', 'Depolama Alanı', 'Site İçinde'],
-        agent: 'Müşteri İlişkileri',
-        contact: '0532 687 35 35'
+        agent: 'Ali Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 4,
-        title: 'Nişantaşı Ofis Katı',
-        location: 'Nişantaşı, Şişli',
+        title: 'Prof. Dr. Turan Güneş Cad. Ofis Katı',
+        location: 'Zeytinburnu Merkez',
         price: 21900000,
         beds: 3,
         baths: 2,
@@ -100,13 +100,13 @@ const propertiesData = [
         featured: true,
         description: 'Kurumsal kullanıma uygun, prestijli bölgede geniş metrekareli ofis katı.',
         features: ['Merkezi Konum', 'Toplantı Alanı', 'Vale Noktası', 'Yüksek Tavan'],
-        agent: 'Pazar Analisti',
-        contact: '0532 687 35 35'
+        agent: 'Ali Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 5,
-        title: 'Sarıyer Bahçeli Villa',
-        location: 'Sarıyer, İstanbul',
+        title: 'Kazlıçeşme Bahçeli Villa',
+        location: 'Kazlıçeşme, Zeytinburnu',
         price: 31200000,
         beds: 6,
         baths: 4,
@@ -116,13 +116,13 @@ const propertiesData = [
         featured: false,
         description: 'Doğa ile iç içe, geniş peyzaj alanlı ve yüksek yatırım potansiyelli villa.',
         features: ['Müstakil Bahçe', 'Şömine', 'Hobi Alanı', 'Özel Otopark'],
-        agent: 'Hüsnü BAŞ',
-        contact: '0532 687 35 35'
+        agent: 'Yusuf Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 6,
-        title: 'Mecidiyeköy Şehir Loftu',
-        location: 'Mecidiyeköy, Şişli',
+        title: 'Topkapı Şehir Loftu',
+        location: 'Topkapı, Zeytinburnu',
         price: 7600000,
         beds: 1,
         baths: 1,
@@ -132,13 +132,13 @@ const propertiesData = [
         featured: false,
         description: 'Toplu ulaşıma yakın, modern tasarımlı ve yüksek kira getirili loft daire.',
         features: ['Yüksek Tavan', 'Açık Mutfak', 'Merkezi Isıtma', 'Kapalı Otopark'],
-        agent: 'Portföy Uzmanı',
-        contact: '0532 687 35 35'
+        agent: 'Devran Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 7,
-        title: 'Kadıköy Geniş Daire',
-        location: 'Moda, Kadıköy',
+        title: 'Seyitnizam Geniş Daire',
+        location: 'Seyitnizam, Zeytinburnu',
         price: 9400000,
         beds: 4,
         baths: 2,
@@ -148,13 +148,13 @@ const propertiesData = [
         featured: false,
         description: 'Sahil hattına yakın, ferah planlı ve aile yaşamına uygun satılık daire.',
         features: ['Balkon', 'Asansör', 'Isı Yalıtımı', 'Depo'],
-        agent: 'Müşteri İlişkileri',
-        contact: '0532 687 35 35'
+        agent: 'Ali Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 8,
-        title: 'Bebek Boğaz Manzaralı Ofis',
-        location: 'Bebek, Beşiktaş',
+        title: 'Veliefendi Prestij Ofis',
+        location: 'Veliefendi, Zeytinburnu',
         price: 15800000,
         beds: 2,
         baths: 2,
@@ -164,13 +164,13 @@ const propertiesData = [
         featured: true,
         description: 'Boğaz manzaralı, prestijli lokasyonda premium ofis ve danışmanlık alanı.',
         features: ['Boğaz Manzarası', 'Resepsiyon', 'Güvenlik', 'Yüksek Ulaşım Kolaylığı'],
-        agent: 'Pazar Analisti',
-        contact: '0532 687 35 35'
+        agent: 'Ali Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 9,
-        title: 'Cihangir Tarihi Daire',
-        location: 'Cihangir, Beyoğlu',
+        title: 'Maltepe Mahallesi Tarihi Daire',
+        location: 'Maltepe, Zeytinburnu',
         price: 11200000,
         beds: 3,
         baths: 2,
@@ -180,13 +180,13 @@ const propertiesData = [
         featured: false,
         description: 'Karakteristik mimariye sahip, modernize edilmiş ve yüksek prim potansiyelli daire.',
         features: ['Tarihi Doku', 'Yüksek Tavan', 'Aydınlık Cephe', 'Merkezi Konum'],
-        agent: 'Hüsnü BAŞ',
-        contact: '0532 687 35 35'
+        agent: 'Yusuf Bey',
+        contact: '0532 561 73 23'
     },
     {
         id: 10,
-        title: 'Şişli Yeni Stüdyo',
-        location: 'Fulya, Şişli',
+        title: 'Çırpıcı Yeni Stüdyo',
+        location: 'Çırpıcı, Zeytinburnu',
         price: 6800000,
         beds: 1,
         baths: 1,
@@ -196,31 +196,31 @@ const propertiesData = [
         featured: false,
         description: 'Yeni binada, kompakt ve yatırım için ideal stüdyo daire.',
         features: ['Açık Mutfak', 'Kapalı Otopark', 'Asansör', 'Güvenlik'],
-        agent: 'Portföy Uzmanı',
-        contact: '0532 687 35 35'
+        agent: 'Devran Bey',
+        contact: '0532 561 73 23'
     }
 ];
 
 const testimonialsData = [
     {
         id: 1,
-        quote: "Hüsnü Bey ile çalışmak çok keyifliydi. Üç hafta gibi kısa sürede doğru evi bulduk ve tüm adımlar eksiksiz yönetildi.",
-        author: "Dominique Le Doaré Atasoy",
-        role: "Portföy iş ortağı",
+        quote: "Daire alım sürecimizde Yusuf Bey çok yardımcı oldu. Tüm ilgisi ve desteği için kendisine teşekkür ederim.",
+        author: "Serhat Ulaş Yakışan",
+        role: "Satın alma müşterisi",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
     },
     {
         id: 2,
-        quote: "Bütçe kısıtlarıma rağmen kiralık ev sürecim çok hızlı ve sorunsuz tamamlandı. Güvenilir bir danışmanlık aldım.",
-        author: "Ivan Vasiliuk",
-        role: "Kiralama danışmanlığı müşterisi",
+        quote: "Ev alma sürecimde Yusuf ve Devran Bey baştan sona çok ilgiliydi. Yardımları sayesinde süreç çok rahat ilerledi.",
+        author: "Emre Budak",
+        role: "Ev alma süreci müşterisi",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
     },
     {
         id: 3,
-        quote: "İstanbul'daki satış sürecimiz baştan sona profesyonelce ilerledi. Mozaik Emlak ekibini gönül rahatlığıyla tavsiye ederim.",
-        author: "Glen Walker",
-        role: "Satış danışmanlığı müşterisi",
+        quote: "Sayfadaki olumlu yorumlara katılıyorum, özellikle Ali Bey'in ilgisine teşekkür ederim. Başarılarının devamını dilerim.",
+        author: "Ati Baysal",
+        role: "Müşteri yorumu",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
     }
 ];
@@ -1141,13 +1141,13 @@ function handleContactSubmit(e) {
 // Utility Functions
 function contactAgent(property) {
     const message = `${property.location} bölgesindeki ${property.title} ilanı ile ilgileniyorum. Lütfen benimle iletişime geçin.`;
-    const mailto = `mailto:info@mozaikemlak.com?subject=İlan Talebi: ${property.title}&body=${encodeURIComponent(message)}`;
+    const mailto = `mailto:info@cigdememlak.com?subject=İlan Talebi: ${property.title}&body=${encodeURIComponent(message)}`;
     window.location.href = mailto;
 }
 
 function scheduleTour(property) {
     const message = `${property.location} bölgesindeki ${property.title} ilanı için randevu talep ediyorum.`;
-    const mailto = `mailto:info@mozaikemlak.com?subject=Randevu Talebi: ${property.title}&body=${encodeURIComponent(message)}`;
+    const mailto = `mailto:info@cigdememlak.com?subject=Randevu Talebi: ${property.title}&body=${encodeURIComponent(message)}`;
     window.location.href = mailto;
 }
 
