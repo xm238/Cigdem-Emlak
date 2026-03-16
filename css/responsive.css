@@ -582,7 +582,7 @@ Version: 1.0.0
 /* Landscape Mobile Devices */
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .hero {
-        min-height: 400px;
+        min-height: 100svh;
     }
 
     .hero-title {
@@ -605,7 +605,7 @@ Version: 1.0.0
 /* Portrait Mobile Devices */
 @media screen and (max-width: 767px) and (orientation: portrait) {
     .hero {
-        min-height: 500px;
+        min-height: 100svh;
     }
 
     .properties-grid {
