@@ -53,7 +53,7 @@ Main Stylesheet
     
     /* Layout */
     --container-width: 1200px;
-    --header-height: 88px;
+    --header-height: 106px;
     --border-radius: 8px;
     --transition-speed: 0.3s;
     
@@ -349,11 +349,11 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.86);
+    background: #ffffff !important;
     backdrop-filter: blur(12px);
     z-index: var(--z-header);
     transition: all var(--transition-speed) ease;
-    box-shadow: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
     height: var(--header-height);
     padding: 0;
     will-change: background, backdrop-filter;
@@ -371,7 +371,7 @@ section {
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.96);
+    background: #ffffff !important;
     backdrop-filter: blur(12px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
@@ -404,8 +404,8 @@ section {
 }
 
 .logo-wordmark__icon {
-    width: 72px;
-    height: 72px;
+    width: 94px;
+    height: 94px;
     object-fit: contain;
 }
 
@@ -448,7 +448,7 @@ section {
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: var(--font-size-sm);
-    color: rgba(54, 54, 56, 0.92);
+    color: rgba(54, 54, 56, 0.95) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -494,7 +494,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: rgba(54, 54, 56, 0.92);
+    color: rgba(54, 54, 56, 0.95) !important;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color var(--transition-speed) ease;
@@ -573,7 +573,7 @@ section {
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: rgba(54, 54, 56, 0.88);
+    background-color: rgba(54, 54, 56, 0.9) !important;
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
